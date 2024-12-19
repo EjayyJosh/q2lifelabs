@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Haven | Group 2</title>
+    <link rel="stylesheet" href="Grp2.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">Handmade Haven<span>.</span></a>
+        <ul class="menu-links">
+         <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="Grp2Home.html">Home</a></li>
+          <li><a href="Grp2Product.html">Products</a></li>
+          <li><a href="Grp2About.html">About us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>What is our product?</h2>
+         <div class="row">
+  <div class="column">
+    <img src="Pompompurin.jpg" alt="What is our product" style="width:100%">
+    <p>
+        Our products are handmade crochet, It's a unique craft that can be used to make a lot of items like keychains, beanie, small plushies, etc.
+        </p>
+  </div>
+    <div class="column">
+    <img src="Bear.jpg" alt="Forest" style="width:100%">
+      <p>The main focus of our product is gift ideas, particularly for important occasions or holidays. To show that our crocheted goods are thoughtful, unique presents for birthdays, holidays, and other occasions.</p>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <div id="home" style="padding: 20px;">
+    <div class="navbar1">
+       <div class="pure-menu-list">
+            <a href="https://youtube.com/@handmade_havenn?si=C8zP6mnqS2vDuKdJ" target="_blank">
+                <i class="fab fa-youtube"></i> Handmade Haven
+            </a>
+        </div>
+          </div>
+  </body>
+</html>
